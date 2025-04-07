@@ -43,7 +43,6 @@ app.listen(PORT, () => {
 
 async function deployPreview(prNumber: number) {
   const stackName = `pr-${prNumber}`;
-  const projectName = "pulumi-preview-deployer";
 
   const workDir = path.join(__dirname, "..", "infra");
 
@@ -69,7 +68,7 @@ async function deployPreview(prNumber: number) {
 
 async function destroyPreview(prNumber: number) {
   const stackName = `pr-${prNumber}`;
-  const projectName = "pulumi-preview-deployer";
+
   const workDir = path.join(__dirname, "..", "infra");
 
   const args: LocalProgramArgs = {
