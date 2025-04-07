@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@pulumi/pulumi": "^3.160.0",
     "body-parser": "^2.2.0",
     "express": "^5.1.0"
   },
