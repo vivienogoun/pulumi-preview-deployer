@@ -1,0 +1,10 @@
+name: pulumi-preview-deployer
+description: Deploy preview environments for PRs using Pulumi and GitHub
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: typescript
